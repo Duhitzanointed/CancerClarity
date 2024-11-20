@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="ChatBot.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  
+  <script src="ChatBot.js" defer></script>
+  
+  
+  
+  <link href="interactive.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <nav class = "navBar" id = "myHeader">
+    <h1 class= "glow">Women In STEM</h1> 
+    <br>
+    
+    <ul class = "ulBar">
+      <li class = "homeMain"> <a href="index.html">Home</a> </li>
+      <li class = "history"> <a href="history.html">History</a> </li>
+      <li class = "resources"> <a href="resources.html">Resources</a> </li>
+      <li class = "interactive"> <a href="interactive.html">Interactive</a> </li>
+      <li class = "about"> <a href="about.html">About</a> </li>
+      
+      
+
+      
+    </ul>
+  
+  </nav>
+  <br>
+  <div class = "intH1">
+    <label>Enter your name:</label>
+    <input class = "nameSubField" placeholder="Ex: Jasmine">
+    <button class = "nameSubBtn">Submit</button>
+    <br>
+    <h1 class="pH1"> </h1>
+    <p class="pP1"></p>
+    <br>
+    <br>
+  </div>
+
+  <div class ="music">
+    <h1>🎵Jam out to music!🎵</h1>
+    <br>
+    <div class = "playlists">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3bgjsWsR3z1x45McVihOAd?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5aPwKjwNHr6dnCejLcPTVx?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+<br>
+    <br>
+  <div class ="games">
+    <h1>🎮Play fun games!🎮</h1>
+    <br>
+    <div class = "gameBtns">
+    <button class = "gameBtn" onclick="window.location.href='https://www.coolmathgames.com/';">Cool Math Games</button>
+      
+    <button class = "gameBtn" onclick="window.location.href='https://poki.com/';">Poki.com</button> 
+    
+    <button class = "gameBtn" onclick="window.location.href='https://elgoog.im/';">Elgoog</button> 
+    <button class = "gameBtn" onclick="window.location.href='https://dinosaur-game.io/';">Dinosaur Game🦖</button>
+    </div>
+    <br>
+    <br>
+  </div>
+
+  <div class ="quizzes">
+    <h1>🤔Take fun quizzes!🤔</h1>
+      <br>
+
+    <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/eleanorbate/accurate-af-sorting-quiz';">Which Hogwarts House Are You In?</button>
+    <button class = "gameBtn" onclick="window.location.href='https://www.collegedata.com/resources/study-break/quiz-can-we-guess-your-zodiac-sign-based-on-your-study-habits';">Can we guess your zodiac sign based on study habits?</button>
+     <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/andrewziegler/quiz-that-can-guess-your-height';">Can we guess your height?</button>
+    <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/noahyuppers/eat-pink-desserts-what-barbie-are-you';">What Barbie Are You (Based on Pink Desserts)</button>
+    <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/emilyjohnson9/what-breed-of-dog-are-you-based-on-your-bread-choices';">What Dog Breed Are You (Based on Bread)</button>
+    <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/jellyandjam/magical-job-quiz';">Your Magical Job</button>
+    <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/williamsalyssa1/greek-god-taylor-swift-quiz';">What Greek God Are You? (Based on TSwift Songs)</button>
+    <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/ahill_house/spider-man-spiderverse-canon-event-personality-quiz';">What's Your Canon Event?</button>
+    <button class = "gameBtn" onclick="window.location.href='https://www.buzzfeed.com/annagassen/string-cheese-percent-quiz';">What % String Cheese Are You?</button>
+  </div>
+  
+<br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="interactive.js"></script>
+<button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+
+      </div>
+    </div>
+
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
